@@ -125,28 +125,51 @@ commands to practice:
 
 12.grep 
 	grep stands for global regular expression print
+	
 	consider the demofile having some content
+	
 	#grep 'searchword' filename
+	
 	eg: grep 'dharma' filename
+	
 	for searching in multiple files
+	
 	# grep "dharma" demo1 demo2
-`	for case sensitive add -i
+`	
+        for case sensitive add -i
+	
 	for finding the line starting with some word and ending with some word
+	
 	# grep "line .*end" demofile
-	inorder to finding the files recursively
+	 
+	 inorder to finding the files recursively
+	
 	grep -r "dharma"
+	
 	for finding the lines without the word searched add -v
+	
 	#grep -v "word"
+	
 	eg: grep -v "dharma"
+	
 	for counting the searched words
+	
 	# grep -c "filename"
+	
 	eg: grep -c "dharma"
+	
 	matching all the lines having the latters a,b,c,d,e
+	
 	grep "[a-e]" filename
+	
 	matching the lines starting with the word ****
+	
 	grep "^hello" filename
+	
 	matching the line ending with the word ****
+	
 	grep "hello$" filename
+	
 	matching all the lines that not having vowel
 	grep "[^vowel]" filename
 	
@@ -154,18 +177,24 @@ commands to practice:
 13.gzip
 	this command is used for compressing the files
 	heres the simplest usage
+	
 	gzip "filename"
 	by using the above command it compresses and deletes the original file
+	
 	gzip -k "filename"
 	there are various levels of compressions in the range 0-9 .the more the number the more delay it takes
+	
 	gzip -1 "filename"
 	and the default is 6
 	we can compress the multiple files
 	gzip filename1 filename2
 	we can compress all the files in te directory by using -r
+	
 	gzip -r filename
 	we can know the compressed percentage by adding -kv
+	
 	gzip -kv filename
+	
 	we can also decompress the file by using -d and ading .gz to the filename
 	gzip -d filename.gz
 
@@ -175,35 +204,64 @@ commands to practice:
 	gunzip filename.gz
 	we can extract into the other filename using -c command
 	gunzip -c filename.gz > another file name
+	
+	
 15.filter commands
 	filter commands are used to filter the output so that required things can be easily picked up
 	the commands used are
 	less
+	
+	
 	it is used to see the output pagewise or linewise
+	
 	less/etc/passwd
+	
 	more
+	
 	same as less command
+	
 	more/etc/passwd
+	
 	head
+	
 	inorder to display the top 10 lines of the file
+	
 	head/etc/passwd
+	
+	
 	for top 5 lines
+	
 	head -n/etc/passwd , where n=5
+	
 	sort
+	
 	we can sort the file by using the following command
+	
 	sord filename
+	
 	we can reverse the order by using -r in the command
+	
 	sort -r filename
+	
 	we can remove the duplicate lines by using -u
+	
 	sort -u filename
+	
 	to sort file according to numbers use -d or -h
 	sort -h filename
+	
 	cut
+	
 	cut command is used to make the sentence into te columns by adding -d -f
+	
 	cut -d -f filename
+	
 	to delimit i.e brining into the oroginal position use -d,-f1
+	
 	cut -d,-f1 filename
+	
 	sed command 
+	
 	this command is used for replace the word with the wanted word in the output
 	note: it wont replace in the original file
 	sed 's/replacable word/word/g' filename
