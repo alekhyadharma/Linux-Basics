@@ -9,14 +9,21 @@ commands to practice:
 # whoami
 
 3.cat we can use cat command in 3 ways
+
+
   a)	Inorder to see the content in the cat command use the following syntax
    	# cat filename
    	eg:cat dharma
+	
+	
   b)	For creating the file with cat command use the following command
   	# cat > filename
 	eg:cat > dharma
+	
 	once we have given the above command it will prompt for entering the content to the file. once done with the content for save and exit the file use ctrl+c
 	NOTE: if the file was already exists with the content we will loose the  content if we use the above command.
+	
+	
   c)	Inorder to append the content in the specific file with cat command use the following syntax
 	#  cat >> filename
 	eg: cat >> dharma
@@ -56,13 +63,22 @@ commands to practice:
 
 
 8. ls by using the following commands we can list the files and folders
+
+
  	ls in order to see the files and folders in the required path
+	
 	ls -l to display all the information about files and folders 
+	
 	ls -a to display all the information about files and folders including hidden files
+	
 	ls -1 to display all the information in the pattern of one file per line
+	
 	ls -R to display all the recursive files and folders
+	
 	ls -lt to display the files according to the last modified time
+	
 	ls -ltr to display the files according to the last modified time in the reverse order
+	
 	ls -i to display files and folders with inode number
 
 
